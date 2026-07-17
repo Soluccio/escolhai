@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Fone Bluetooth Premium",
-    "description": "Praticidade, qualidade e uma compra simples do início ao fim.",
+    "description": "Qualidade, praticidade e uma experiência de compra simples do início ao fim.",
     "category": "Eletrônicos",
     "price": 59.9,
     "oldPrice": 89.9,
@@ -11,12 +11,13 @@
     "image": "images/fone-bluetooth.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
-    "order": 1
+    "order": 1,
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 2,
     "name": "Luminária LED de Mesa",
-    "description": "Praticidade, qualidade e uma compra simples do início ao fim.",
+    "description": "Qualidade, praticidade e uma experiência de compra simples do início ao fim.",
     "category": "Casa",
     "price": 42.9,
     "oldPrice": 69.9,
@@ -25,12 +26,13 @@
     "image": "images/luminaria-led.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
-    "order": 2
+    "order": 2,
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 3,
     "name": "Bolsa Casual Elegante",
-    "description": "Praticidade, qualidade e uma compra simples do início ao fim.",
+    "description": "Qualidade, praticidade e uma experiência de compra simples do início ao fim.",
     "category": "Moda",
     "price": 74.9,
     "oldPrice": 119.9,
@@ -39,12 +41,13 @@
     "image": "images/bolsa-casual.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
-    "order": 3
+    "order": 3,
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 4,
     "name": "Kit de Pincéis Profissionais",
-    "description": "Praticidade, qualidade e uma compra simples do início ao fim.",
+    "description": "Qualidade, praticidade e uma experiência de compra simples do início ao fim.",
     "category": "Beleza",
     "price": 34.9,
     "oldPrice": 55.9,
@@ -53,12 +56,13 @@
     "image": "images/kit-pinceis.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
-    "order": 4
+    "order": 4,
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 5,
     "name": "Relógio Minimalista",
-    "description": "Praticidade, qualidade e uma compra simples do início ao fim.",
+    "description": "Qualidade, praticidade e uma experiência de compra simples do início ao fim.",
     "category": "Acessórios",
     "price": 89.9,
     "oldPrice": 139.9,
@@ -67,12 +71,13 @@
     "image": "images/relogio.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
-    "order": 5
+    "order": 5,
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 6,
     "name": "Organizador Multiuso",
-    "description": "Praticidade, qualidade e uma compra simples do início ao fim.",
+    "description": "Qualidade, praticidade e uma experiência de compra simples do início ao fim.",
     "category": "Casa",
     "price": 29.9,
     "oldPrice": 49.9,
@@ -81,12 +86,13 @@
     "image": "images/organizador.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
-    "order": 6
+    "order": 6,
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 7,
     "name": "Caixa de Som Portátil",
-    "description": "Praticidade, qualidade e uma compra simples do início ao fim.",
+    "description": "Qualidade, praticidade e uma experiência de compra simples do início ao fim.",
     "category": "Eletrônicos",
     "price": 79.9,
     "oldPrice": 129.9,
@@ -95,12 +101,13 @@
     "image": "images/caixa-som.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
-    "order": 7
+    "order": 7,
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 8,
     "name": "Óculos de Sol Clássico",
-    "description": "Praticidade, qualidade e uma compra simples do início ao fim.",
+    "description": "Qualidade, praticidade e uma experiência de compra simples do início ao fim.",
     "category": "Acessórios",
     "price": 39.9,
     "oldPrice": 69.9,
@@ -109,6 +116,7 @@
     "image": "images/oculos.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
-    "order": 8
+    "order": 8,
+    "lastUpdated": "2026-07-17"
   }
 ]

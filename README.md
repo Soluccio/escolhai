@@ -1,3 +1,5 @@
 # Escolhaí
 
-Loja online com página inicial e catálogo completo em `produtos.html`.
+Loja online com catálogo organizado e acesso direto aos produtos.
+
+Edite `products.json` e execute o workflow **Atualizar catalogo Escolhai** para reconstruir o site.
