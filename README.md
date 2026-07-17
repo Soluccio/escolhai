@@ -1,15 +1,11 @@
-# Escolhaí
+# Escolhaí 2.0
 
-**Você escolhe, a gente encurta o caminho.**
+## Atualizar produtos sem API
+1. Abra `administrar-produtos.html` no computador.
+2. Importe `products.json`.
+3. Edite e exporte o novo `products.json`.
+4. Substitua o arquivo no GitHub.
+5. Em Actions, execute `Atualizar catalogo Escolhai`.
 
-## Visualizar
-Abra `index.html`. As imagens ficam em `images/`.
-
-## Editar produtos
-Edite `products.json` e execute `python scripts/build_site.py`.
-
-## GitHub Pages
-Envie todo o conteúdo desta pasta para a raiz do repositório. Em Settings > Pages selecione `main` e `/ (root)`.
-
-## Automação
-O workflow não falha enquanto as credenciais não existirem. Depois de obter a API oficial, cadastre `SHOPEE_APP_ID` e `SHOPEE_APP_SECRET` nos GitHub Actions Secrets. A consulta real deverá ser ajustada ao schema autorizado para sua conta antes de ser ativada. Nunca grave o Secret no código.
+## Importante
+O painel é local e não deve ser publicado como área administrativa segura. O login público não controla o GitHub. Os preços e imagens são ilustrativos até serem trocados pelos dados reais.

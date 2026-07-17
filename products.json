@@ -6,15 +6,16 @@
     "category": "Eletrônicos",
     "price": 59.9,
     "oldPrice": 89.9,
+    "priceMin": 59.9,
+    "priceMax": 59.9,
     "rating": 4.8,
     "badge": "Mais vendido",
     "image": "images/fone-bluetooth.jpg",
+    "fallbackImage": "images/hero-produtos.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 1,
-    "itemId": "",
-    "shopId": "",
-    "lastUpdated": ""
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 2,
@@ -23,15 +24,16 @@
     "category": "Casa",
     "price": 42.9,
     "oldPrice": 69.9,
+    "priceMin": 42.9,
+    "priceMax": 42.9,
     "rating": 4.9,
     "badge": "Destaque",
     "image": "images/luminaria-led.jpg",
+    "fallbackImage": "images/hero-produtos.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 2,
-    "itemId": "",
-    "shopId": "",
-    "lastUpdated": ""
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 3,
@@ -40,15 +42,16 @@
     "category": "Moda",
     "price": 74.9,
     "oldPrice": 119.9,
+    "priceMin": 74.9,
+    "priceMax": 74.9,
     "rating": 4.7,
     "badge": "Novidade",
     "image": "images/bolsa-casual.jpg",
+    "fallbackImage": "images/hero-produtos.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 3,
-    "itemId": "",
-    "shopId": "",
-    "lastUpdated": ""
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 4,
@@ -57,15 +60,16 @@
     "category": "Beleza",
     "price": 34.9,
     "oldPrice": 55.9,
+    "priceMin": 34.9,
+    "priceMax": 34.9,
     "rating": 4.8,
     "badge": "Oferta",
     "image": "images/kit-pinceis.jpg",
+    "fallbackImage": "images/hero-produtos.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 4,
-    "itemId": "",
-    "shopId": "",
-    "lastUpdated": ""
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 5,
@@ -74,15 +78,16 @@
     "category": "Acessórios",
     "price": 89.9,
     "oldPrice": 139.9,
+    "priceMin": 89.9,
+    "priceMax": 89.9,
     "rating": 4.6,
     "badge": "Seleção da loja",
     "image": "images/relogio.jpg",
+    "fallbackImage": "images/hero-produtos.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 5,
-    "itemId": "",
-    "shopId": "",
-    "lastUpdated": ""
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 6,
@@ -91,15 +96,16 @@
     "category": "Casa",
     "price": 29.9,
     "oldPrice": 49.9,
+    "priceMin": 29.9,
+    "priceMax": 29.9,
     "rating": 4.9,
     "badge": "Popular",
     "image": "images/organizador.jpg",
+    "fallbackImage": "images/hero-produtos.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 6,
-    "itemId": "",
-    "shopId": "",
-    "lastUpdated": ""
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 7,
@@ -108,15 +114,16 @@
     "category": "Eletrônicos",
     "price": 79.9,
     "oldPrice": 129.9,
+    "priceMin": 79.9,
+    "priceMax": 79.9,
     "rating": 4.7,
     "badge": "Bom preço",
     "image": "images/caixa-som.jpg",
+    "fallbackImage": "images/hero-produtos.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 7,
-    "itemId": "",
-    "shopId": "",
-    "lastUpdated": ""
+    "lastUpdated": "2026-07-17"
   },
   {
     "id": 8,
@@ -125,14 +132,15 @@
     "category": "Acessórios",
     "price": 39.9,
     "oldPrice": 69.9,
+    "priceMin": 39.9,
+    "priceMax": 39.9,
     "rating": 4.6,
     "badge": "Tendência",
     "image": "images/oculos.jpg",
+    "fallbackImage": "images/hero-produtos.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 8,
-    "itemId": "",
-    "shopId": "",
-    "lastUpdated": ""
+    "lastUpdated": "2026-07-17"
   }
 ]

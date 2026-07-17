@@ -1,0 +1,15 @@
+{
+  "name": "Escolhaí",
+  "short_name": "Escolhaí",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f8f3f4",
+  "theme_color": "#26070e",
+  "icons": [
+    {
+      "src": "images/escolhai-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
