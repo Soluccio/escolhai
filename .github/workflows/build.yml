@@ -1,13 +1,5 @@
-name: Validar catalogo Escolhai
-on:
-  workflow_dispatch:
-  push:
-    paths:
-      - products.json
-      - index.html
-      - produtos.html
-      - styles.css
-      - app.js
+name: Validar catálogo
+on: [workflow_dispatch, push]
 permissions:
   contents: read
 jobs:
