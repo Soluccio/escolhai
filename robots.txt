@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://soluccio.github.io/escolhai/sitemap.xml

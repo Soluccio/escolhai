@@ -1,0 +1,24 @@
+{
+  "name": "Escolhaí — Vitrine Online",
+  "short_name": "Escolhaí",
+  "description": "Você escolhe, a gente encurta o caminho.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#14090C",
+  "theme_color": "#7B1E2B",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
