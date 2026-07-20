@@ -2,6 +2,11 @@
 <html lang="pt-BR" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <!-- Cache control para evitar versões antigas -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#7B1E2B">
   <title>Produtos — Escolhaí</title>
@@ -41,7 +46,7 @@
     :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
     .container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
 
-    /* Header (mesmo do index) */
+    /* Header */
     header { position: sticky; top: 0; z-index: 1000; background: var(--overlay); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
     .nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem; max-width: var(--max-width); margin: 0 auto; gap: 1rem; }
     .logo { display: flex; align-items: center; gap: 0.6rem; font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.4rem; }
@@ -69,21 +74,13 @@
     /* Toolbar */
     .toolbar { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); position: sticky; top: 70px; background: var(--bg); z-index: 50; }
     .search-wrap { flex: 1; min-width: 240px; position: relative; }
-    .search-wrap input {
-      width: 100%; padding: 0.8rem 1rem 0.8rem 2.8rem;
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius-sm); color: var(--text); font-size: 0.95rem; font-family: inherit;
-      transition: all var(--transition);
-    }
+    .search-wrap input { width: 100%; padding: 0.8rem 1rem 0.8rem 2.8rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-size: 0.95rem; font-family: inherit; transition: all var(--transition); }
     .search-wrap input:focus { border-color: var(--wine-600); outline: none; box-shadow: 0 0 0 3px rgba(123, 30, 43, 0.15); }
     .search-wrap input::placeholder { color: var(--text-muted); }
     .search-icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
     .sort-wrap { display: flex; align-items: center; gap: 0.5rem; }
     .sort-wrap label { font-size: 0.85rem; color: var(--text-muted); white-space: nowrap; }
-    .sort-wrap select {
-      padding: 0.7rem 1rem; background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius-sm); color: var(--text); font-size: 0.9rem; font-family: inherit; cursor: pointer;
-    }
+    .sort-wrap select { padding: 0.7rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-size: 0.9rem; font-family: inherit; cursor: pointer; }
     .result-count { font-size: 0.85rem; color: var(--text-muted); margin-left: auto; }
 
     /* Layout */
@@ -91,12 +88,7 @@
     .filters { position: sticky; top: 140px; align-self: start; }
     .filters h3 { font-size: 0.95rem; margin-bottom: 1rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--border); }
     .filter-list { display: flex; flex-direction: column; gap: 0.3rem; }
-    .filter-list label {
-      display: flex; align-items: center; gap: 0.5rem;
-      padding: 0.6rem 0.8rem; border-radius: var(--radius-sm);
-      cursor: pointer; font-size: 0.9rem; color: var(--text-secondary);
-      transition: all var(--transition);
-    }
+    .filter-list label { display: flex; align-items: center; gap: 0.5rem; padding: 0.6rem 0.8rem; border-radius: var(--radius-sm); cursor: pointer; font-size: 0.9rem; color: var(--text-secondary); transition: all var(--transition); }
     .filter-list label:hover { background: var(--bg-soft); color: var(--text); }
     .filter-list input[type="radio"] { accent-color: var(--wine-700); }
     .filter-list label.active { background: var(--wine-700); color: #fff; font-weight: 600; }
@@ -104,7 +96,6 @@
     .filter-count { margin-left: auto; font-size: 0.78rem; opacity: 0.7; }
     .clear-filters { margin-top: 1rem; font-size: 0.85rem; color: var(--wine-600); font-weight: 600; padding: 0.5rem 0.8rem; }
     .clear-filters:hover { text-decoration: underline; }
-
     .filters-toggle { display: none; }
 
     /* Products grid */
@@ -180,18 +171,18 @@
 
   <header>
     <nav class="nav">
-      <a href="index.html" class="logo" aria-label="Escolhaí — Página inicial">
+      <a href="index.html?v=4" class="logo" aria-label="Escolhaí — Página inicial">
         <span class="logo-mark">E</span>
         <span class="logo-text">Escolha<span>í</span></span>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="produtos.html" class="active">Produtos</a></li>
-        <li><a href="index.html#sobre">Sobre</a></li>
-        <li><a href="index.html#contato">Contato</a></li>
+        <li><a href="index.html?v=4">Início</a></li>
+        <li><a href="produtos.html?v=4" class="active">Produtos</a></li>
+        <li><a href="index.html?v=4#sobre">Sobre</a></li>
+        <li><a href="index.html?v=4#contato">Contato</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="produtos.html?fav=1" class="icon-btn" aria-label="Favoritos">
+        <a href="produtos.html?v=4&fav=1" class="icon-btn" aria-label="Favoritos">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           <span class="fav-count" id="favCount"></span>
         </a>
@@ -207,7 +198,7 @@
   <main>
     <section class="page-head">
       <div class="container">
-        <div class="breadcrumb"><a href="index.html">Início</a> / Produtos</div>
+        <div class="breadcrumb"><a href="index.html?v=4">Início</a> / Produtos</div>
         <h1>Catálogo completo</h1>
         <p>Todos os produtos da Escolhaí, organizados para você encontrar o que procura.</p>
       </div>
@@ -275,7 +266,6 @@
     let currentSearch = '';
     let showOnlyFavs = false;
 
-    // Theme
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = document.getElementById('themeIcon');
     const savedTheme = localStorage.getItem('escolhai-theme') || 'dark';
@@ -288,7 +278,6 @@
       themeIcon.textContent = next === 'dark' ? '☀' : '◐';
     });
 
-    // Menu mobile
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
     menuToggle.addEventListener('click', () => {
@@ -296,14 +285,12 @@
       menuToggle.setAttribute('aria-expanded', open);
     });
 
-    // Filters mobile
     const filtersToggle = document.getElementById('filtersToggle');
     const filters = document.getElementById('filters');
     const filtersBackdrop = document.getElementById('filtersBackdrop');
     filtersToggle.addEventListener('click', () => { filters.classList.add('open'); filtersBackdrop.classList.add('open'); });
     filtersBackdrop.addEventListener('click', () => { filters.classList.remove('open'); filtersBackdrop.classList.remove('open'); });
 
-    // Favoritos
     function getFavs() { return JSON.parse(localStorage.getItem('escolhai-favs') || '[]'); }
     function toggleFav(id) {
       const favs = getFavs();
@@ -424,7 +411,7 @@
             <div class="empty-icon">${showOnlyFavs ? '♡' : '🔍'}</div>
             <h3>${showOnlyFavs ? 'Nenhum favorito ainda' : 'Nenhum produto encontrado'}</h3>
             <p>${showOnlyFavs ? 'Salve produtos clicando no coração para vê-los aqui.' : 'Tente ajustar a busca ou os filtros.'}</p>
-            <a href="produtos.html" class="btn-secondary">Ver todos os produtos →</a>
+            <a href="produtos.html?v=4" class="btn-secondary">Ver todos os produtos →</a>
           </div>`;
         return;
       }
@@ -432,14 +419,13 @@
       list.forEach(p => grid.appendChild(createCard(p)));
     }
 
-    // Events
     document.getElementById('searchInput').addEventListener('input', (e) => { currentSearch = e.target.value; render(); });
     document.getElementById('sortSelect').addEventListener('change', (e) => { currentSort = e.target.value; render(); });
     document.getElementById('clearFilters').addEventListener('click', () => {
       currentCategory = 'Todos'; currentSearch = ''; currentSort = 'relevance'; showOnlyFavs = false;
       document.getElementById('searchInput').value = '';
       document.getElementById('sortSelect').value = 'relevance';
-      history.replaceState(null, '', 'produtos.html');
+      history.replaceState(null, '', 'produtos.html?v=4');
       buildFilters(getCategoryCounts());
       render();
     });
@@ -451,7 +437,6 @@
       return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]));
     }
 
-    // Init
     fetch(PRODUCTS_URL)
       .then(r => r.json())
       .then(products => {
@@ -462,6 +447,15 @@
       .catch(() => {
         document.getElementById('productsGrid').innerHTML = '<div class="empty"><div class="empty-icon">⚠</div><h3>Erro ao carregar</h3><p>Não foi possível carregar os produtos. Tente novamente em instantes.</p></div>';
       });
+  </script>
+  
+  <!-- Script anti-bfcache para evitar versão antiga ao usar botão voltar -->
+  <script>
+    window.addEventListener('pageshow', function(event) {
+      if (event.persisted) {
+        window.location.reload();
+      }
+    });
   </script>
 </body>
 </html>
