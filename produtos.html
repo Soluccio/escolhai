@@ -1,48 +1,467 @@
-<!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#26070e"><meta name="description" content="Escolhaí — produtos selecionados para todos os momentos."><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta name="escolhai-version" content="2026-07-17-hotfix"><link rel="icon" href="images/escolhai-icon.svg?v=3" type="image/svg+xml"><title>Produtos — Escolhaí</title>
-<style>
-:root{--navy:#26070e;--navy2:#3a0a15;--blue:#68172c;--blue2:#8d2942;--bg:#f8f3f4;--surface:#fff;--text:#2c1117;--muted:#75636a;--line:#eadde1;--shadow:0 16px 45px rgba(38,7,14,.10)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}a{color:inherit;text-decoration:none}button,input{font:inherit}.announcement{background:var(--navy);color:#dceaf5;text-align:center;padding:10px 15px;font-size:13px;font-weight:700}header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.nav{max-width:1220px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px}.logo{width:44px;height:44px;border-radius:13px;background:linear-gradient(145deg,#1a0308,#68172c);display:grid;place-items:center;color:#fff;font-weight:900;font-size:21px;box-shadow:0 8px 22px rgba(38,7,14,.24)}.brand b{display:block;font-size:19px}.brand small{color:var(--muted);font-size:10px;letter-spacing:.16em;font-weight:800}.links{display:flex;gap:28px;font-size:14px;font-weight:750}.links a:hover{color:var(--blue)}.tools{display:flex;gap:8px}.tool{border:1px solid var(--line);background:#fff;color:var(--navy);height:42px;min-width:42px;border-radius:12px;cursor:pointer;font-size:17px}.tool.active{background:var(--navy);color:#fff}.hero{background:linear-gradient(115deg,#100104 0%,#26070e 58%,#4a0f1e 100%);color:#fff;overflow:hidden}.hero-inner{max-width:1220px;margin:auto;padding:78px 20px;display:grid;grid-template-columns:1.12fr .88fr;gap:60px;align-items:center}.kicker{display:inline-flex;gap:8px;align-items:center;padding:8px 13px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(255,255,255,.08);font-size:12px;font-weight:850;letter-spacing:.08em}h1{font-size:clamp(46px,6vw,72px);line-height:1;letter-spacing:-.05em;margin:22px 0}.hero p{max-width:630px;color:#c6d7e5;font-size:18px;line-height:1.7}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:14px 20px;border-radius:13px;font-weight:850}.btn-primary{background:#fff;color:var(--navy)}.btn-secondary{border:1px solid rgba(255,255,255,.3)}.showcase{position:relative;min-height:350px}.showcase-card{position:absolute;background:#fff;color:var(--text);border-radius:24px;padding:13px;box-shadow:0 25px 60px rgba(0,0,0,.3)}.showcase-card img{display:block;width:100%;border-radius:17px}.showcase-card.one{width:61%;left:0;top:10px;transform:rotate(-5deg)}.showcase-card.two{width:58%;right:0;bottom:7px;transform:rotate(5deg)}.showcase-card b{display:block;padding:10px 5px 3px}.trust{background:#fff;border-bottom:1px solid var(--line)}.trust-inner{max-width:1220px;margin:auto;padding:24px 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.trust-item{display:flex;align-items:center;gap:13px}.trust-icon{width:44px;height:44px;border-radius:13px;background:#f5e5e9;color:var(--blue);display:grid;place-items:center;font-weight:900}.trust-item b{display:block}.trust-item small{color:var(--muted)}section{max-width:1220px;margin:auto;padding:72px 20px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px}.eyebrow{color:var(--blue);font-size:12px;letter-spacing:.18em;font-weight:900}h2{font-size:clamp(32px,4vw,44px);letter-spacing:-.035em;margin:8px 0}.section-head p{color:var(--muted);margin:0}.search{width:340px;max-width:100%;height:48px;border:1px solid var(--line);background:#fff;border-radius:14px;padding:0 16px;color:var(--text);outline:none}.filters{display:flex;gap:9px;margin:27px 0;overflow:auto;padding-bottom:3px}.filter{border:1px solid var(--line);background:#fff;padding:10px 16px;border-radius:999px;font-weight:800;color:var(--text);white-space:nowrap;cursor:pointer}.filter.active{background:var(--navy);color:#fff;border-color:var(--navy)}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.product-card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 4px 16px rgba(38,7,14,.04);transition:.25s}.product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.product-image{position:relative;background:#dce8f1}.product-image img{width:100%;height:225px;object-fit:cover;display:block}.badge,.discount{position:absolute;color:#fff;border-radius:999px;font-size:11px;font-weight:900;padding:7px 10px}.badge{top:12px;left:12px;background:rgba(38,7,14,.92)}.discount{bottom:12px;left:12px;background:#1d6799}.heart{position:absolute;right:12px;top:12px;border:0;width:39px;height:39px;border-radius:50%;background:#fff;color:var(--navy);font-size:22px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.12)}.heart.on{background:var(--navy);color:#fff}.product-info{padding:18px}.row{display:flex;justify-content:space-between;gap:10px;font-size:11px;font-weight:800}.category{color:var(--blue)}.rating{color:#9a6b00}.product-info h3{font-size:17px;margin:10px 0 7px;min-height:42px}.description{font-size:12px;line-height:1.5;color:var(--muted);margin:0 0 14px}.price-line{display:flex;justify-content:space-between;align-items:end;gap:7px}.old-price{display:block;color:var(--muted);font-size:11px;text-decoration:line-through}.price-line strong{font-size:23px;color:var(--navy)}.installment{color:var(--muted);font-size:10px}.buy{display:flex;justify-content:space-between;align-items:center;background:var(--navy);color:#fff;margin-top:15px;padding:13px 15px;border-radius:12px;font-weight:850}.buy:hover{background:var(--blue)}.empty{display:none;background:#fff;border:1px dashed var(--line);border-radius:20px;padding:45px;text-align:center;color:var(--muted)}.about-bg{background:#fff;border-top:1px solid var(--line)}.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}.about-visual{background:linear-gradient(140deg,var(--navy),var(--blue));border-radius:28px;padding:45px;color:#fff;min-height:390px;display:flex;flex-direction:column;justify-content:flex-end;box-shadow:var(--shadow)}.about-visual .big{font-size:90px;line-height:1}.about p{color:var(--muted);line-height:1.7}.checklist{display:grid;gap:12px;margin-top:22px}.check{font-weight:750}.check span{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#f4e1e6;color:var(--blue);margin-right:9px}footer{background:#120206;color:#fff;padding:50px 20px}.footer{max-width:1220px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:30px}.footer p,.notice{color:#98adbe;line-height:1.7;font-size:13px}.notice{border-left:2px solid #64172b;padding-left:18px}body.dark{--bg:#16070b;--surface:#2b0d15;--text:#eef5fa;--muted:#9eb0bf;--line:#55202d}body.dark header,body.dark .trust,body.dark .product-card,body.dark .filter,body.dark .search,body.dark .tool,body.dark .about-bg{background:#280c14;color:var(--text)}body.dark .price-line strong{color:#e6a6b5}
-@media(max-width:950px){.links{display:none}.hero-inner,.about{grid-template-columns:1fr}.showcase{min-height:330px;max-width:560px}.grid{grid-template-columns:repeat(2,1fr)}.trust-inner{grid-template-columns:1fr}.section-head{align-items:stretch;flex-direction:column}.search{width:100%}}@media(max-width:580px){.hero-inner{padding-top:55px}h1{font-size:47px}.showcase{min-height:265px}.grid{grid-template-columns:1fr}.footer{grid-template-columns:1fr}.brand small{display:none}}
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7B1E2B">
+  <title>Produtos — Escolhaí</title>
+  <meta name="description" content="Catálogo completo da Escolhaí. Pesquise, filtre por categoria e encontre o produto ideal com acesso direto à plataforma oficial.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://soluccio.github.io/escolhai/produtos.html">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%237B1E2B'/%3E%3Ctext x='50' y='68' font-size='60' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --wine-900: #4A0E1A; --wine-800: #5A1620; --wine-700: #7B1E2B;
+      --wine-600: #9B2D3D; --wine-500: #B83A4C; --gold: #D4A574; --gold-soft: #E8C9A0;
+      --radius-sm: 8px; --radius: 12px; --radius-lg: 20px;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.08); --shadow: 0 8px 24px rgba(0,0,0,0.12); --shadow-lg: 0 20px 50px rgba(0,0,0,0.18);
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); --max-width: 1280px;
+    }
+    [data-theme="dark"] {
+      --bg: #14090C; --bg-soft: #1F1014; --bg-card: #251418; --bg-elevated: #2D181C;
+      --border: #3A1F25; --text: #F8F0F0; --text-secondary: #C9B5B8; --text-muted: #8A7378;
+      --overlay: rgba(20, 9, 12, 0.85);
+    }
+    [data-theme="light"] {
+      --bg: #FBF5F5; --bg-soft: #F5EBEB; --bg-card: #FFFFFF; --bg-elevated: #FFFFFF;
+      --border: #EAD8DA; --text: #2A0F14; --text-secondary: #5A3A40; --text-muted: #8A6E74;
+      --overlay: rgba(251, 245, 245, 0.9);
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; transition: background var(--transition), color var(--transition); }
+    h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; line-height: 1.2; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+    ul { list-style: none; }
+    :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
 
-.shop-top{display:inline-flex;align-items:center;background:#26070e;color:#fff;padding:11px 14px;border-radius:12px;font-size:13px;font-weight:850}.product-image{overflow:hidden}.product-image img{transition:transform .35s ease}.product-card:hover .product-image img{transform:scale(1.04)}.product-image .discount{z-index:2}.brand-tagline{color:#f0c8d2!important}.mobile-note{display:none}.price-alert{margin-top:22px;padding:15px 17px;border:1px solid #d9bec5;background:#f5e9ec;color:#51202d;border-radius:14px;font-size:12px;line-height:1.55}@media(max-width:950px){.shop-top{display:none}.mobile-note{display:block;text-align:center;background:#26070e;color:#fff;padding:12px;font-weight:800}}
+    /* Header (mesmo do index) */
+    header { position: sticky; top: 0; z-index: 1000; background: var(--overlay); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.5rem; max-width: var(--max-width); margin: 0 auto; gap: 1rem; }
+    .logo { display: flex; align-items: center; gap: 0.6rem; font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.4rem; }
+    .logo-mark { width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(135deg, var(--wine-700), var(--wine-500)); display: grid; place-items: center; color: #fff; font-size: 1.2rem; box-shadow: 0 4px 12px rgba(123, 30, 43, 0.4); }
+    .logo-text span { color: var(--wine-600); }
+    .nav-links { display: flex; align-items: center; gap: 0.5rem; }
+    .nav-links a { padding: 0.5rem 0.9rem; border-radius: var(--radius-sm); color: var(--text-secondary); font-weight: 500; font-size: 0.95rem; transition: all var(--transition); }
+    .nav-links a:hover, .nav-links a.active { color: var(--text); background: var(--bg-soft); }
+    .nav-actions { display: flex; align-items: center; gap: 0.6rem; }
+    .icon-btn { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; background: var(--bg-soft); border: 1px solid var(--border); color: var(--text); transition: all var(--transition); position: relative; }
+    .icon-btn:hover { background: var(--wine-700); color: #fff; border-color: var(--wine-700); transform: translateY(-2px); }
+    .fav-count { position: absolute; top: -4px; right: -4px; background: var(--gold); color: var(--wine-900); font-size: 0.7rem; font-weight: 700; min-width: 18px; height: 18px; border-radius: 9px; display: grid; place-items: center; padding: 0 5px; }
+    .fav-count:empty { display: none; }
+    .btn-shopee { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--wine-700); color: #fff; padding: 0.6rem 1.2rem; border-radius: var(--radius-sm); font-weight: 600; font-size: 0.9rem; transition: all var(--transition); }
+    .btn-shopee:hover { background: var(--wine-600); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(123, 30, 43, 0.35); }
+    .menu-toggle { display: none; }
 
-/* HOTFIX ESCOLHAI v3 */
-.brand-icon{width:44px;height:44px;border-radius:13px;display:block}.product-image:after,.price-alert{display:none!important}.about-bg,body.dark .about-bg{background:#fff!important;color:#2c1117!important}.about-visual{background:linear-gradient(145deg,#170307,#711a32)!important}.about-brand{display:flex;align-items:center;gap:20px;margin-bottom:24px}.about-brand img{width:108px;height:108px;border-radius:24px;box-shadow:0 12px 30px rgba(0,0,0,.28)}.about-brand strong{display:block;color:#fff!important;font-size:44px;line-height:1}.about-brand small{display:block;color:#ffe6ec!important;font-size:16px;margin-top:10px;font-weight:700}.about-visual h2{color:#fff!important;text-shadow:0 2px 8px rgba(0,0,0,.35)}.about .eyebrow,body.dark .about .eyebrow{color:#8f2941!important}.about>div:last-child h2,body.dark .about>div:last-child h2{color:#26070e!important}.about>div:last-child p,body.dark .about>div:last-child p{color:#5d4a51!important}.about .check,body.dark .about .check{color:#32151d!important}.about .check span,body.dark .about .check span{background:#f4e1e6!important;color:#68172c!important}footer{background:#080103!important}.footer,.footer b,.footer .brand b{color:#fff!important}.footer p,.footer .notice{color:#fff2f5!important}.footer small{color:#f2c6d1!important}.footer .notice{background:rgba(255,255,255,.09)!important;border-left-color:#d16a82!important;padding:20px!important;border-radius:0 14px 14px 0!important;line-height:1.75!important}.footer .notice b{color:#fff!important}.discount{background:#68172c!important}.catalog-page .hero,.catalog-page .trust,.catalog-page .about-bg,.catalog-page .mobile-note{display:none}.catalog-page main{min-height:70vh}.catalog-page #produtos{padding-top:55px}@media(max-width:580px){.about-brand{align-items:flex-start;flex-direction:column}.about-brand strong{font-size:38px}.about-brand small{font-size:14px}.footer .notice{font-size:13px!important}}
-</style><script>(function(){if('serviceWorker'in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){rs.forEach(function(r){r.unregister()})})}if('caches'in window){caches.keys().then(function(keys){keys.forEach(function(k){caches.delete(k)})})}})();</script></head><body class="catalog-page">
-<div class="announcement">Escolhaí • Você escolhe, a gente encurta o caminho</div>
-<header><div class="nav"><a class="brand" href="index.html"><img class="brand-icon" src="images/escolhai-icon.svg?v=3" alt="" aria-hidden="true"><span><b>Escolhaí</b><small>SUA VITRINE ONLINE</small></span></a><nav class="links"><a href="index.html">Início</a><a href="produtos.html" aria-current="page">Produtos</a><a href="index.html#sobre">Sobre</a><a href="index.html#contato">Contato</a></nav><div class="tools"><a class="shop-top" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Visitar Shopee ↗</a><button class="tool" id="theme" type="button" aria-label="Alternar tema">◐</button><button class="tool" id="favFilter" type="button" aria-label="Mostrar favoritos">♡ <small id="favCount"></small></button></div></div></header>
-<div class="mobile-note"><a href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Visitar Shopee ↗</a></div><main><div class="hero" id="inicio"><div class="hero-inner"><div><span class="kicker">✓ ESCOLHER FICOU MAIS FÁCIL</span><h1>Você escolhe. A gente encurta o caminho.</h1><p>Explore produtos de diferentes categorias, compare opções e vá direto à página oficial do vendedor. Simples, organizado e sem enrolação.</p><div class="actions"><a class="btn btn-primary" href="produtos.html">Explorar produtos →</a><a class="btn btn-secondary" href="#sobre">Conhecer a loja</a></div></div><div class="showcase"><div class="showcase-card one"><img src="images/hero-produtos.jpg" alt="Fone Bluetooth" loading="eager"><b>Escolhas para você</b></div><div class="showcase-card two"><img src="images/hero-loja.jpg" alt="Relógio" loading="eager"><b>Vitrine em destaque</b></div></div></div></div>
-<div class="trust"><div class="trust-inner"><div class="trust-item"><span class="trust-icon">↗</span><div><b>Acesso direto ao produto</b><small>Encontre e acesse com rapidez</small></div></div><div class="trust-item"><span class="trust-icon">✓</span><div><b>Compra na plataforma oficial</b><small>Finalize com o vendedor</small></div></div><div class="trust-item"><span class="trust-icon">▦</span><div><b>Catálogo organizado</b><small>Diversas categorias em um só lugar</small></div></div></div></div>
-<section id="produtos"><div class="section-head"><div><div class="eyebrow">LOJA COMPLETA</div><h2>Todos os produtos</h2><p>Explore as categorias e escolha seus favoritos.</p></div><input class="search" id="search" type="search" placeholder="Buscar produto..." aria-label="Buscar produto"></div><div class="filters"><button class="filter active" data-cat="Todos">Todos</button><button class="filter" data-cat="Eletrônicos">Eletrônicos</button><button class="filter" data-cat="Casa">Casa</button><button class="filter" data-cat="Beleza">Beleza</button><button class="filter" data-cat="Moda">Moda</button><button class="filter" data-cat="Acessórios">Acessórios</button></div><div class="grid" id="grid"><!-- PRODUCTS_START -->
-<article class="product-card" data-name="fone bluetooth premium" data-cat="Eletrônicos" data-id="1"><div class="product-image"><img src="images/fone-bluetooth.jpg?v=3" alt="Fone Bluetooth Premium" loading="lazy"><span class="badge">Mais vendido</span><span class="discount">-33%</span><button class="heart" type="button" data-fav="1">♡</button></div><div class="product-info"><div class="row"><span class="category">Eletrônicos</span><span class="rating">★ 4.8</span></div><h3>Fone Bluetooth Premium</h3><p class="description">Praticidade, qualidade e uma compra simples do início ao fim.</p><div class="price-line"><div><span class="old-price">R$ 89,90</span><strong>R$ 59,90</strong></div><span class="installment">Compra segura</span></div><a class="buy" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver produto <span>↗</span></a></div></article>
-<article class="product-card" data-name="luminária led de mesa" data-cat="Casa" data-id="2"><div class="product-image"><img src="images/luminaria-led.jpg?v=3" alt="Luminária LED de Mesa" loading="lazy"><span class="badge">Destaque</span><span class="discount">-39%</span><button class="heart" type="button" data-fav="2">♡</button></div><div class="product-info"><div class="row"><span class="category">Casa</span><span class="rating">★ 4.9</span></div><h3>Luminária LED de Mesa</h3><p class="description">Praticidade, qualidade e uma compra simples do início ao fim.</p><div class="price-line"><div><span class="old-price">R$ 69,90</span><strong>R$ 42,90</strong></div><span class="installment">Compra segura</span></div><a class="buy" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver produto <span>↗</span></a></div></article>
-<article class="product-card" data-name="bolsa casual elegante" data-cat="Moda" data-id="3"><div class="product-image"><img src="images/bolsa-casual.jpg?v=3" alt="Bolsa Casual Elegante" loading="lazy"><span class="badge">Novidade</span><span class="discount">-38%</span><button class="heart" type="button" data-fav="3">♡</button></div><div class="product-info"><div class="row"><span class="category">Moda</span><span class="rating">★ 4.7</span></div><h3>Bolsa Casual Elegante</h3><p class="description">Praticidade, qualidade e uma compra simples do início ao fim.</p><div class="price-line"><div><span class="old-price">R$ 119,90</span><strong>R$ 74,90</strong></div><span class="installment">Compra segura</span></div><a class="buy" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver produto <span>↗</span></a></div></article>
-<article class="product-card" data-name="kit de pincéis profissionais" data-cat="Beleza" data-id="4"><div class="product-image"><img src="images/kit-pinceis.jpg?v=3" alt="Kit de Pincéis Profissionais" loading="lazy"><span class="badge">Oferta</span><span class="discount">-38%</span><button class="heart" type="button" data-fav="4">♡</button></div><div class="product-info"><div class="row"><span class="category">Beleza</span><span class="rating">★ 4.8</span></div><h3>Kit de Pincéis Profissionais</h3><p class="description">Praticidade, qualidade e uma compra simples do início ao fim.</p><div class="price-line"><div><span class="old-price">R$ 55,90</span><strong>R$ 34,90</strong></div><span class="installment">Compra segura</span></div><a class="buy" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver produto <span>↗</span></a></div></article>
-<article class="product-card" data-name="relógio minimalista" data-cat="Acessórios" data-id="5"><div class="product-image"><img src="images/relogio.jpg?v=3" alt="Relógio Minimalista" loading="lazy"><span class="badge">Seleção da loja</span><span class="discount">-36%</span><button class="heart" type="button" data-fav="5">♡</button></div><div class="product-info"><div class="row"><span class="category">Acessórios</span><span class="rating">★ 4.6</span></div><h3>Relógio Minimalista</h3><p class="description">Praticidade, qualidade e uma compra simples do início ao fim.</p><div class="price-line"><div><span class="old-price">R$ 139,90</span><strong>R$ 89,90</strong></div><span class="installment">Compra segura</span></div><a class="buy" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver produto <span>↗</span></a></div></article>
-<article class="product-card" data-name="organizador multiuso" data-cat="Casa" data-id="6"><div class="product-image"><img src="images/organizador.jpg?v=3" alt="Organizador Multiuso" loading="lazy"><span class="badge">Popular</span><span class="discount">-40%</span><button class="heart" type="button" data-fav="6">♡</button></div><div class="product-info"><div class="row"><span class="category">Casa</span><span class="rating">★ 4.9</span></div><h3>Organizador Multiuso</h3><p class="description">Praticidade, qualidade e uma compra simples do início ao fim.</p><div class="price-line"><div><span class="old-price">R$ 49,90</span><strong>R$ 29,90</strong></div><span class="installment">Compra segura</span></div><a class="buy" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver produto <span>↗</span></a></div></article>
-<article class="product-card" data-name="caixa de som portátil" data-cat="Eletrônicos" data-id="7"><div class="product-image"><img src="images/caixa-som.jpg?v=3" alt="Caixa de Som Portátil" loading="lazy"><span class="badge">Bom preço</span><span class="discount">-38%</span><button class="heart" type="button" data-fav="7">♡</button></div><div class="product-info"><div class="row"><span class="category">Eletrônicos</span><span class="rating">★ 4.7</span></div><h3>Caixa de Som Portátil</h3><p class="description">Praticidade, qualidade e uma compra simples do início ao fim.</p><div class="price-line"><div><span class="old-price">R$ 129,90</span><strong>R$ 79,90</strong></div><span class="installment">Compra segura</span></div><a class="buy" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver produto <span>↗</span></a></div></article>
-<article class="product-card" data-name="óculos de sol clássico" data-cat="Acessórios" data-id="8"><div class="product-image"><img src="images/oculos.jpg?v=3" alt="Óculos de Sol Clássico" loading="lazy"><span class="badge">Tendência</span><span class="discount">-43%</span><button class="heart" type="button" data-fav="8">♡</button></div><div class="product-info"><div class="row"><span class="category">Acessórios</span><span class="rating">★ 4.6</span></div><h3>Óculos de Sol Clássico</h3><p class="description">Praticidade, qualidade e uma compra simples do início ao fim.</p><div class="price-line"><div><span class="old-price">R$ 69,90</span><strong>R$ 39,90</strong></div><span class="installment">Compra segura</span></div><a class="buy" href="https://shopee.com.br/" target="_blank" rel="nofollow sponsored noopener">Ver produto <span>↗</span></a></div></article>
-<!-- PRODUCTS_END -->
-<!-- PRODUCTS_END --></div><div class="empty" id="empty">Nenhum produto encontrado.</div></section>
-<div class="about-bg" id="sobre"><section class="about"><div class="about-visual"><div class="about-brand"><img src="images/escolhai-icon.svg?v=3" alt=""><div><strong>Escolhaí</strong><small>Você escolhe, a gente encurta o caminho.</small></div></div><h2>Uma vitrine feita para facilitar suas escolhas.</h2></div><div><div class="eyebrow">SOBRE A LOJA</div><h2>Boas escolhas começam por uma boa vitrine.</h2><p>Na Escolhaí, cada categoria é organizada para você encontrar o que procura com rapidez. Escolha seus produtos, confira os detalhes e avance para uma compra simples e segura.</p><div class="checklist"><div class="check"><span>✓</span>Produtos organizados por categoria</div><div class="check"><span>✓</span>Pesquisa rápida em todo o catálogo</div><div class="check"><span>✓</span>Lista de favoritos salva no navegador</div><div class="check"><span>✓</span>Layout adaptado para celular e computador</div></div></div></section></div></main>
-<footer id="contato"><div class="footer"><div><div class="brand"><img class="brand-icon" src="images/escolhai-icon.svg?v=3" alt="" aria-hidden="true"><span><b>Escolhaí</b><small>SUA VITRINE ONLINE</small></span></div><p>Produtos para todos os momentos, com navegação simples e compra segura.</p></div><div class="notice"><b>Transparência</b><br>Alguns links podem gerar comissão para a Escolhaí, sem custo adicional para você. Pagamento, entrega e atendimento do pedido são realizados pela plataforma parceira.<br><br>© 2026 Escolhaí.</div></div></footer>
-<script>
-(function(){
-  var cards=[].slice.call(document.querySelectorAll('.product-card')), selected='Todos', onlyFav=false, likes=[];
-  try{likes=JSON.parse(localStorage.getItem('escolhai-favorites')||'[]')||[];}catch(e){likes=[];}
-  function count(){document.getElementById('favCount').textContent=likes.length?likes.length:'';}
-  function paint(){
-    var q=(document.getElementById('search').value||'').toLowerCase(), visible=0;
-    cards.forEach(function(card){var id=Number(card.getAttribute('data-id'));var okCat=selected==='Todos'||card.getAttribute('data-cat')===selected;var okSearch=card.getAttribute('data-name').indexOf(q)>-1;var okFav=!onlyFav||likes.indexOf(id)>-1;var show=okCat&&okSearch&&okFav;card.style.display=show?'':'none';if(show)visible++;var heart=card.querySelector('.heart');heart.className=likes.indexOf(id)>-1?'heart on':'heart';heart.textContent=likes.indexOf(id)>-1?'♥':'♡';});
-    document.getElementById('empty').style.display=visible?'none':'block';count();
-  }
-  [].slice.call(document.querySelectorAll('.filter')).forEach(function(btn){btn.onclick=function(){selected=btn.getAttribute('data-cat');[].slice.call(document.querySelectorAll('.filter')).forEach(function(b){b.className='filter';});btn.className='filter active';paint();};});
-  [].slice.call(document.querySelectorAll('.heart')).forEach(function(btn){btn.onclick=function(){var id=Number(btn.getAttribute('data-fav')),i=likes.indexOf(id);if(i>-1)likes.splice(i,1);else likes.push(id);try{localStorage.setItem('escolhai-favorites',JSON.stringify(likes));}catch(e){}paint();};});
-  document.getElementById('search').oninput=paint;
-  document.getElementById('favFilter').onclick=function(){onlyFav=!onlyFav;this.className=onlyFav?'tool active':'tool';paint();};
-  document.getElementById('theme').onclick=function(){document.body.classList.toggle('dark');try{localStorage.setItem('escolhai-theme',document.body.classList.contains('dark')?'dark':'light');}catch(e){}};
-  try{if(localStorage.getItem('escolhai-theme')==='dark')document.body.classList.add('dark');}catch(e){}
-  paint();
-})();
-</script></body></html>
+    /* Page header */
+    .page-head { padding: 2.5rem 0 1.5rem; background: radial-gradient(circle at 50% 0%, rgba(123, 30, 43, 0.15), transparent 60%); }
+    .breadcrumb { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.8rem; }
+    .breadcrumb a:hover { color: var(--wine-600); }
+    .page-head h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 0.5rem; letter-spacing: -0.5px; }
+    .page-head p { color: var(--text-secondary); font-size: 1.05rem; }
+
+    /* Toolbar */
+    .toolbar { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); position: sticky; top: 70px; background: var(--bg); z-index: 50; }
+    .search-wrap { flex: 1; min-width: 240px; position: relative; }
+    .search-wrap input {
+      width: 100%; padding: 0.8rem 1rem 0.8rem 2.8rem;
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); color: var(--text); font-size: 0.95rem; font-family: inherit;
+      transition: all var(--transition);
+    }
+    .search-wrap input:focus { border-color: var(--wine-600); outline: none; box-shadow: 0 0 0 3px rgba(123, 30, 43, 0.15); }
+    .search-wrap input::placeholder { color: var(--text-muted); }
+    .search-icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none; }
+    .sort-wrap { display: flex; align-items: center; gap: 0.5rem; }
+    .sort-wrap label { font-size: 0.85rem; color: var(--text-muted); white-space: nowrap; }
+    .sort-wrap select {
+      padding: 0.7rem 1rem; background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); color: var(--text); font-size: 0.9rem; font-family: inherit; cursor: pointer;
+    }
+    .result-count { font-size: 0.85rem; color: var(--text-muted); margin-left: auto; }
+
+    /* Layout */
+    .catalog-layout { display: grid; grid-template-columns: 220px 1fr; gap: 2rem; padding: 2rem 0; }
+    .filters { position: sticky; top: 140px; align-self: start; }
+    .filters h3 { font-size: 0.95rem; margin-bottom: 1rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--border); }
+    .filter-list { display: flex; flex-direction: column; gap: 0.3rem; }
+    .filter-list label {
+      display: flex; align-items: center; gap: 0.5rem;
+      padding: 0.6rem 0.8rem; border-radius: var(--radius-sm);
+      cursor: pointer; font-size: 0.9rem; color: var(--text-secondary);
+      transition: all var(--transition);
+    }
+    .filter-list label:hover { background: var(--bg-soft); color: var(--text); }
+    .filter-list input[type="radio"] { accent-color: var(--wine-700); }
+    .filter-list label.active { background: var(--wine-700); color: #fff; font-weight: 600; }
+    .filter-list label.active input { accent-color: #fff; }
+    .filter-count { margin-left: auto; font-size: 0.78rem; opacity: 0.7; }
+    .clear-filters { margin-top: 1rem; font-size: 0.85rem; color: var(--wine-600); font-weight: 600; padding: 0.5rem 0.8rem; }
+    .clear-filters:hover { text-decoration: underline; }
+
+    .filters-toggle { display: none; }
+
+    /* Products grid */
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.2rem; }
+    .product-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: all var(--transition); display: flex; flex-direction: column; position: relative; }
+    .product-card:hover { transform: translateY(-5px); border-color: var(--wine-600); box-shadow: var(--shadow-lg); }
+    .product-img-wrap { position: relative; aspect-ratio: 1; background: var(--bg-soft); overflow: hidden; }
+    .product-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .product-card:hover .product-img-wrap img { transform: scale(1.05); }
+    .product-badge { position: absolute; top: 0.7rem; left: 0.7rem; background: var(--wine-700); color: #fff; padding: 0.25rem 0.6rem; border-radius: 50px; font-size: 0.7rem; font-weight: 700; box-shadow: 0 4px 12px rgba(123, 30, 43, 0.4); }
+    .product-discount { position: absolute; top: 0.7rem; right: 0.7rem; background: var(--gold); color: var(--wine-900); padding: 0.25rem 0.5rem; border-radius: 50px; font-size: 0.72rem; font-weight: 800; }
+    .fav-btn { position: absolute; bottom: 0.7rem; right: 0.7rem; width: 36px; height: 36px; border-radius: 50%; background: var(--overlay); backdrop-filter: blur(8px); border: 1px solid var(--border); display: grid; place-items: center; font-size: 1rem; color: var(--text-secondary); transition: all var(--transition); }
+    .fav-btn:hover { background: var(--wine-700); color: #fff; border-color: var(--wine-700); transform: scale(1.1); }
+    .fav-btn.active { background: var(--wine-700); color: var(--gold); border-color: var(--wine-700); }
+    .product-info { padding: 0.9rem; display: flex; flex-direction: column; flex: 1; }
+    .product-cat { font-size: 0.72rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.3rem; }
+    .product-info h3 { font-size: 0.95rem; margin-bottom: 0.3rem; font-weight: 600; line-height: 1.3; }
+    .product-desc { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.7rem; flex: 1; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .product-rating { display: flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+    .stars { color: var(--gold); letter-spacing: 1px; }
+    .product-prices { display: flex; align-items: baseline; gap: 0.4rem; margin-bottom: 0.7rem; }
+    .price-now { font-family: 'Poppins', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--wine-600); }
+    .price-old { font-size: 0.82rem; color: var(--text-muted); text-decoration: line-through; }
+    .btn-product { display: flex; align-items: center; justify-content: center; gap: 0.4rem; background: var(--bg-soft); color: var(--text); padding: 0.65rem; border-radius: var(--radius-sm); font-weight: 600; font-size: 0.85rem; border: 1px solid var(--border); transition: all var(--transition); width: 100%; }
+    .btn-product:hover { background: var(--wine-700); color: #fff; border-color: var(--wine-700); }
+
+    /* Empty state */
+    .empty { grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; }
+    .empty-icon { font-size: 3rem; margin-bottom: 1rem; opacity: 0.5; }
+    .empty h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .empty p { color: var(--text-secondary); margin-bottom: 1.5rem; }
+    .empty .btn-secondary { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--bg-card); color: var(--text); padding: 0.8rem 1.5rem; border-radius: var(--radius-sm); font-weight: 600; border: 1px solid var(--border); }
+    .empty .btn-secondary:hover { border-color: var(--wine-600); color: var(--wine-600); }
+
+    /* Skeleton */
+    .skeleton { background: linear-gradient(90deg, var(--bg-soft) 25%, var(--bg-card) 50%, var(--bg-soft) 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: var(--radius-sm); }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+    .skeleton-card { height: 340px; border-radius: var(--radius); }
+
+    /* Toast */
+    .toast-container { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 2000; display: flex; flex-direction: column; gap: 0.5rem; }
+    .toast { background: var(--bg-card); border: 1px solid var(--border); border-left: 4px solid var(--wine-600); padding: 0.9rem 1.2rem; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg); font-size: 0.9rem; display: flex; align-items: center; gap: 0.6rem; animation: slideIn 0.3s ease; }
+    @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+
+    /* Footer */
+    footer { background: var(--bg-soft); border-top: 1px solid var(--border); padding: 2rem 0 1.5rem; margin-top: 3rem; }
+    .footer-transparency { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.2rem; margin-bottom: 1.2rem; font-size: 0.82rem; color: var(--text-secondary); }
+    .footer-transparency strong { color: var(--gold); display: block; margin-bottom: 0.2rem; }
+    .footer-bottom { text-align: center; font-size: 0.85rem; color: var(--text-muted); padding-top: 1rem; border-top: 1px solid var(--border); }
+
+    @media (max-width: 900px) {
+      .catalog-layout { grid-template-columns: 1fr; }
+      .filters { position: fixed; top: 0; left: 0; bottom: 0; width: 280px; background: var(--bg); padding: 1.5rem; z-index: 1100; transform: translateX(-100%); transition: transform var(--transition); overflow-y: auto; box-shadow: var(--shadow-lg); }
+      .filters.open { transform: translateX(0); }
+      .filters-toggle { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-sm); font-weight: 600; font-size: 0.9rem; }
+      .filters-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1050; }
+      .filters-backdrop.open { display: block; }
+    }
+    @media (max-width: 640px) {
+      .nav-links { display: none; position: fixed; top: 70px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); padding: 1rem; flex-direction: column; align-items: stretch; }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 0.8rem 1rem; }
+      .menu-toggle { display: grid; }
+      .btn-shopee span { display: none; }
+      .toolbar { top: 60px; }
+      .result-count { width: 100%; margin-left: 0; }
+      .products-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.8rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo" aria-label="Escolhaí — Página inicial">
+        <span class="logo-mark">E</span>
+        <span class="logo-text">Escolha<span>í</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html" class="active">Produtos</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="produtos.html?fav=1" class="icon-btn" aria-label="Favoritos">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="fav-count" id="favCount"></span>
+        </a>
+        <button class="icon-btn" id="themeToggle" aria-label="Alternar tema"><span id="themeIcon">◐</span></button>
+        <a href="https://shopee.com.br/" target="_blank" rel="noopener nofollow sponsored" class="btn-shopee"><span>Visitar Shopee</span> ↗</a>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Início</a> / Produtos</div>
+        <h1>Catálogo completo</h1>
+        <p>Todos os produtos da Escolhaí, organizados para você encontrar o que procura.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="toolbar">
+        <div class="search-wrap">
+          <span class="search-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
+          <input type="search" id="searchInput" placeholder="Buscar por nome do produto..." aria-label="Buscar produtos">
+        </div>
+        <button class="filters-toggle" id="filtersToggle">☰ Filtros</button>
+        <div class="sort-wrap">
+          <label for="sortSelect">Ordenar:</label>
+          <select id="sortSelect">
+            <option value="relevance">Relevância</option>
+            <option value="price-asc">Menor preço</option>
+            <option value="price-desc">Maior preço</option>
+            <option value="rating">Melhor avaliação</option>
+            <option value="discount">Maior desconto</option>
+          </select>
+        </div>
+        <span class="result-count" id="resultCount"></span>
+      </div>
+
+      <div class="filters-backdrop" id="filtersBackdrop"></div>
+      <div class="catalog-layout">
+        <aside class="filters" id="filters" aria-label="Filtros de categoria">
+          <h3>Categorias</h3>
+          <div class="filter-list" id="filterList"></div>
+          <button class="clear-filters" id="clearFilters">Limpar filtros</button>
+        </aside>
+
+        <div class="products-grid" id="productsGrid">
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+          <div class="skeleton-card skeleton"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-transparency">
+        <strong>Transparência</strong>
+        Alguns links podem gerar comissão para a Escolhaí, sem custo adicional para você. Pagamento, entrega e atendimento do pedido são realizados pela plataforma parceira (Shopee). A Escolhaí atua apenas como vitrine de produtos.
+      </div>
+      <div class="footer-bottom">© 2026 Escolhaí. Você escolhe, a gente encurta o caminho.</div>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script>
+    const PRODUCTS_URL = 'products.json?v=4';
+    let allProducts = [];
+    let currentCategory = 'Todos';
+    let currentSort = 'relevance';
+    let currentSearch = '';
+    let showOnlyFavs = false;
+
+    // Theme
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const savedTheme = localStorage.getItem('escolhai-theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    themeIcon.textContent = savedTheme === 'dark' ? '☀' : '◐';
+    themeToggle.addEventListener('click', () => {
+      const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('escolhai-theme', next);
+      themeIcon.textContent = next === 'dark' ? '☀' : '◐';
+    });
+
+    // Menu mobile
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', open);
+    });
+
+    // Filters mobile
+    const filtersToggle = document.getElementById('filtersToggle');
+    const filters = document.getElementById('filters');
+    const filtersBackdrop = document.getElementById('filtersBackdrop');
+    filtersToggle.addEventListener('click', () => { filters.classList.add('open'); filtersBackdrop.classList.add('open'); });
+    filtersBackdrop.addEventListener('click', () => { filters.classList.remove('open'); filtersBackdrop.classList.remove('open'); });
+
+    // Favoritos
+    function getFavs() { return JSON.parse(localStorage.getItem('escolhai-favs') || '[]'); }
+    function toggleFav(id) {
+      const favs = getFavs();
+      const idx = favs.indexOf(id);
+      if (idx > -1) { favs.splice(idx, 1); showToast('Removido dos favoritos'); }
+      else { favs.push(id); showToast('Adicionado aos favoritos ♡'); }
+      localStorage.setItem('escolhai-favs', JSON.stringify(favs));
+      updateFavCount();
+      return idx === -1;
+    }
+    function updateFavCount() {
+      const count = getFavs().length;
+      document.getElementById('favCount').textContent = count > 0 ? count : '';
+    }
+    updateFavCount();
+
+    function showToast(msg) {
+      const c = document.getElementById('toastContainer');
+      const t = document.createElement('div');
+      t.className = 'toast';
+      t.textContent = msg;
+      c.appendChild(t);
+      setTimeout(() => { t.style.opacity = '0'; setTimeout(() => t.remove(), 300); }, 2500);
+    }
+
+    function formatBRL(v) { return 'R$ ' + v.toFixed(2).replace('.', ','); }
+    function calcDiscount(o, n) { return o ? Math.round((1 - n / o) * 100) : 0; }
+    function stars(r) { return '★★★★★'.slice(0, Math.round(r)) + '☆☆☆☆☆'.slice(0, 5 - Math.round(r)); }
+
+    function createCard(p) {
+      const isFav = getFavs().includes(p.id);
+      const discount = calcDiscount(p.oldPrice, p.price);
+      const card = document.createElement('article');
+      card.className = 'product-card';
+      card.innerHTML = `
+        <div class="product-img-wrap">
+          <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,var(--wine-700),var(--wine-500))';this.parentElement.innerHTML='<span style=\\'display:grid;place-items:center;height:100%;font-size:3rem;color:rgba(255,255,255,0.3)\\'>📦</span>'">
+          ${p.badge ? `<span class="product-badge">${p.badge}</span>` : ''}
+          ${discount > 0 ? `<span class="product-discount">-${discount}%</span>` : ''}
+          <button class="fav-btn ${isFav ? 'active' : ''}" data-id="${p.id}" aria-label="Favoritar ${p.name}">${isFav ? '♥' : '♡'}</button>
+        </div>
+        <div class="product-info">
+          <span class="product-cat">${p.category}</span>
+          <h3>${p.name}</h3>
+          <p class="product-desc">${p.description}</p>
+          <div class="product-rating"><span class="stars">${stars(p.rating)}</span> <span>${p.rating.toFixed(1)}</span></div>
+          <div class="product-prices">
+            <span class="price-now">${formatBRL(p.price)}</span>
+            ${p.oldPrice ? `<span class="price-old">${formatBRL(p.oldPrice)}</span>` : ''}
+          </div>
+          <a href="${p.link}" target="_blank" rel="noopener nofollow sponsored" class="btn-product">Ver produto ↗</a>
+        </div>`;
+      const favBtn = card.querySelector('.fav-btn');
+      favBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const nowFav = toggleFav(p.id);
+        favBtn.classList.toggle('active', nowFav);
+        favBtn.textContent = nowFav ? '♥' : '♡';
+        if (showOnlyFavs && !nowFav) render();
+      });
+      return card;
+    }
+
+    function buildFilters(cats) {
+      const list = document.getElementById('filterList');
+      const params = new URLSearchParams(window.location.search);
+      const urlCat = params.get('cat');
+      if (urlCat) currentCategory = urlCat;
+      if (params.get('fav') === '1') showOnlyFavs = true;
+
+      const all = [['Todos', allProducts.filter(p => p.active).length]];
+      cats.forEach(([name, count]) => all.push([name, count]));
+
+      list.innerHTML = all.map(([name, count]) => `
+        <label class="${name === currentCategory ? 'active' : ''}">
+          <input type="radio" name="cat" value="${name}" ${name === currentCategory ? 'checked' : ''}>
+          <span>${name}</span>
+          <span class="filter-count">${count}</span>
+        </label>
+      `).join('');
+
+      list.querySelectorAll('input').forEach(input => {
+        input.addEventListener('change', (e) => {
+          currentCategory = e.target.value;
+          list.querySelectorAll('label').forEach(l => l.classList.toggle('active', l.contains(e.target)));
+          render();
+          if (window.innerWidth <= 900) { filters.classList.remove('open'); filtersBackdrop.classList.remove('open'); }
+        });
+      });
+    }
+
+    function render() {
+      let list = allProducts.filter(p => p.active);
+      if (showOnlyFavs) {
+        const favs = getFavs();
+        list = list.filter(p => favs.includes(p.id));
+      }
+      if (currentCategory !== 'Todos') list = list.filter(p => p.category === currentCategory);
+      if (currentSearch) {
+        const q = currentSearch.toLowerCase();
+        list = list.filter(p => p.name.toLowerCase().includes(q) || p.description.toLowerCase().includes(q) || p.category.toLowerCase().includes(q));
+      }
+
+      switch (currentSort) {
+        case 'price-asc': list.sort((a, b) => a.price - b.price); break;
+        case 'price-desc': list.sort((a, b) => b.price - a.price); break;
+        case 'rating': list.sort((a, b) => b.rating - a.rating); break;
+        case 'discount': list.sort((a, b) => calcDiscount(b.oldPrice, b.price) - calcDiscount(a.oldPrice, a.price)); break;
+        default: list.sort((a, b) => a.order - b.order);
+      }
+
+      const grid = document.getElementById('productsGrid');
+      document.getElementById('resultCount').textContent = `${list.length} ${list.length === 1 ? 'produto' : 'produtos'}`;
+
+      if (list.length === 0) {
+        grid.innerHTML = `
+          <div class="empty">
+            <div class="empty-icon">${showOnlyFavs ? '♡' : '🔍'}</div>
+            <h3>${showOnlyFavs ? 'Nenhum favorito ainda' : 'Nenhum produto encontrado'}</h3>
+            <p>${showOnlyFavs ? 'Salve produtos clicando no coração para vê-los aqui.' : 'Tente ajustar a busca ou os filtros.'}</p>
+            <a href="produtos.html" class="btn-secondary">Ver todos os produtos →</a>
+          </div>`;
+        return;
+      }
+      grid.innerHTML = '';
+      list.forEach(p => grid.appendChild(createCard(p)));
+    }
+
+    // Events
+    document.getElementById('searchInput').addEventListener('input', (e) => { currentSearch = e.target.value; render(); });
+    document.getElementById('sortSelect').addEventListener('change', (e) => { currentSort = e.target.value; render(); });
+    document.getElementById('clearFilters').addEventListener('click', () => {
+      currentCategory = 'Todos'; currentSearch = ''; currentSort = 'relevance'; showOnlyFavs = false;
+      document.getElementById('searchInput').value = '';
+      document.getElementById('sortSelect').value = 'relevance';
+      history.replaceState(null, '', 'produtos.html');
+      buildFilters(getCategoryCounts());
+      render();
+    });
+
+    function getCategoryCounts() {
+      const active = allProducts.filter(p => p.active);
+      const counts = {};
+      active.forEach(p => counts[p.category] = (counts[p.category] || 0) + 1);
+      return Object.entries(counts).sort((a, b) => a[0].localeCompare(b[0]));
+    }
+
+    // Init
+    fetch(PRODUCTS_URL)
+      .then(r => r.json())
+      .then(products => {
+        allProducts = products;
+        buildFilters(getCategoryCounts());
+        render();
+      })
+      .catch(() => {
+        document.getElementById('productsGrid').innerHTML = '<div class="empty"><div class="empty-icon">⚠</div><h3>Erro ao carregar</h3><p>Não foi possível carregar os produtos. Tente novamente em instantes.</p></div>';
+      });
+  </script>
+</body>
+</html>
