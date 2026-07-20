@@ -1,9 +1,3 @@
-# Escolhaí
+# Escolhaí — 27 produtos
 
-Vitrine online responsiva com página inicial, catálogo completo, busca, filtros, favoritos, PWA e SEO básico.
-
-## Atualizar produtos
-Edite `products.json`. Mantenha os campos existentes e envie as imagens para `images/`.
-
-## Publicação
-Publique a branch `main` pela raiz `/` no GitHub Pages.
+A página inicial mostra 8 destaques. A página `produtos.html` mostra os 27 produtos. As oito fotografias de produtos são reutilizadas em variações relacionadas e devem ser substituídas quando houver fotos reais.
