@@ -1,3 +1,3 @@
-# Escolhaí — 27 produtos
+# Escolhaí — modelo restaurado
 
-A página inicial mostra 8 destaques. A página `produtos.html` mostra os 27 produtos. As oito fotografias de produtos são reutilizadas em variações relacionadas e devem ser substituídas quando houver fotos reais.
+O `index.html` é exatamente o modelo anexado. A página inicial mostra 8 destaques; `produtos.html` mostra 27 produtos. Não há service worker neste pacote.

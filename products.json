@@ -8,7 +8,7 @@
     "oldPrice": 89.9,
     "rating": 4.8,
     "badge": "Mais vendido",
-    "image": "images/fone.jpg",
+    "image": "images/fone-bluetooth.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 1
@@ -22,7 +22,7 @@
     "oldPrice": 69.9,
     "rating": 4.9,
     "badge": "Destaque",
-    "image": "images/luminaria.jpg",
+    "image": "images/luminaria-led.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 2
@@ -36,7 +36,7 @@
     "oldPrice": 119.9,
     "rating": 4.7,
     "badge": "Novidade",
-    "image": "images/bolsa.jpg",
+    "image": "images/bolsa-casual.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 3
@@ -50,7 +50,7 @@
     "oldPrice": 55.9,
     "rating": 4.8,
     "badge": "Oferta",
-    "image": "images/pinceis.jpg",
+    "image": "images/kit-pinceis.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 4
@@ -120,7 +120,7 @@
     "oldPrice": 99.9,
     "rating": 4.7,
     "badge": "Esportivo",
-    "image": "images/fone.jpg",
+    "image": "images/fone-bluetooth.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 9
@@ -134,7 +134,7 @@
     "oldPrice": 79.9,
     "rating": 4.8,
     "badge": "Decoração",
-    "image": "images/luminaria.jpg",
+    "image": "images/luminaria-led.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 10
@@ -148,7 +148,7 @@
     "oldPrice": 94.9,
     "rating": 4.7,
     "badge": "Prática",
-    "image": "images/bolsa.jpg",
+    "image": "images/bolsa-casual.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 11
@@ -162,7 +162,7 @@
     "oldPrice": 44.9,
     "rating": 4.6,
     "badge": "Compacto",
-    "image": "images/pinceis.jpg",
+    "image": "images/kit-pinceis.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 12
@@ -232,7 +232,7 @@
     "oldPrice": 149.9,
     "rating": 4.8,
     "badge": "Home office",
-    "image": "images/fone.jpg",
+    "image": "images/fone-bluetooth.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 17
@@ -246,7 +246,7 @@
     "oldPrice": 89.9,
     "rating": 4.9,
     "badge": "Funcional",
-    "image": "images/luminaria.jpg",
+    "image": "images/luminaria-led.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 18
@@ -260,7 +260,7 @@
     "oldPrice": 129.9,
     "rating": 4.8,
     "badge": "Elegante",
-    "image": "images/bolsa.jpg",
+    "image": "images/bolsa-casual.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 19
@@ -274,7 +274,7 @@
     "oldPrice": 69.9,
     "rating": 4.9,
     "badge": "Completo",
-    "image": "images/pinceis.jpg",
+    "image": "images/kit-pinceis.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 20
@@ -344,7 +344,7 @@
     "oldPrice": 149.9,
     "rating": 4.8,
     "badge": "Espaçosa",
-    "image": "images/bolsa.jpg",
+    "image": "images/bolsa-casual.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 25
@@ -358,7 +358,7 @@
     "oldPrice": 49.9,
     "rating": 4.7,
     "badge": "Essencial",
-    "image": "images/pinceis.jpg",
+    "image": "images/kit-pinceis.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 26
@@ -372,7 +372,7 @@
     "oldPrice": 59.9,
     "rating": 4.8,
     "badge": "Compacta",
-    "image": "images/luminaria.jpg",
+    "image": "images/luminaria-led.jpg",
     "link": "https://shopee.com.br/",
     "active": true,
     "order": 27
